@@ -1,4 +1,4 @@
-package com.driver.controllers;
+/*package com.driver.controllers;
 
 import com.driver.model.Facility;
 
@@ -31,3 +31,4 @@ public class UpdateFacilitiesRequest {
         this.hotelName = hotelName;
     }
 }
+*/

@@ -2,6 +2,7 @@ package com.driver.model;
 
 public class Booking {
 
+    // @GeneratedValue(strategy=GenerationType.UUID)
     private String bookingId; //This will be a random UUID generated String
 
     private int bookingAadharCard;
@@ -13,6 +14,10 @@ public class Booking {
     private String hotelName;
 
     private int amountToBePaid;
+
+    public Booking(){
+
+    }
 
     public Booking(String bookingId, int bookingAadharCard, int noOfRooms, String bookingPersonName, String hotelName) {
         this.bookingId = bookingId;

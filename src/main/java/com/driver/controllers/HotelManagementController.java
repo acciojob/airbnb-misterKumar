@@ -76,7 +76,7 @@ public class HotelManagementController {
         return hotelManagementService.update(request.getNewFacilities(), request.getHotelName());
     }*/
     @PutMapping("/update-facilities")
-    public Hotel updateFacilities(List<Facility> newFacilities,String hotelName){
+    public Hotel updateFacilities(@RequestParam(name = "newFacilities")List<Facility> newFacilities,@RequestParam(name = "hotelName")String hotelName){
 
         //We are having a new facilites that a hotel is planning to bring.
         //If the hotel is already having that facility ignore that facility otherwise add that facility in the hotelDb
